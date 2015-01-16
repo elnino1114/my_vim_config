@@ -1,0 +1,6 @@
+.VimballRecord
+.netrwhist
+bundle
+*.pyc
+after
+ftdetect
