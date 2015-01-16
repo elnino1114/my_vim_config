@@ -155,3 +155,5 @@ set showcmd
 " Edit and Source vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+set laststatus=2
