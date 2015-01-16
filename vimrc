@@ -28,7 +28,6 @@ Bundle "tpope/vim-surround"
 Bundle "bling/vim-airline"
 Bundle 'rking/ag.vim'
 Bundle 'terryma/vim-multiple-cursors'
-Bundle 'Chiel92/vim-autoformat'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-repeat'
 
@@ -129,10 +128,6 @@ inoremap <leader>[ []<ESC>i
 inoremap <leader>( ()<ESC>i
 
 set cursorline
-
-" for python
-autocmd FileType python noremap <buffer><Leader>cf :Autoformat<CR><CR>
-
 set backspace=indent,eol,start
 
 "
