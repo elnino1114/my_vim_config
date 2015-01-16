@@ -23,7 +23,6 @@ Bundle 'https://github.com/scrooloose/nerdtree.git'
 Bundle 'vim-scripts/tComment'                          
 Bundle 'tpope/vim-abolish'                             
 Bundle 'sjl/gundo.vim'                                 
-Bundle 'vim-scripts/Command-T'
 Bundle "Lokaltog/vim-easymotion"
 Bundle "tpope/vim-surround"
 Bundle "bling/vim-airline"
@@ -70,7 +69,6 @@ nnoremap <F3> :CtrlPSmartTabs<CR>
 " instead of commandT buffer windows
 nnoremap <leader>b :CtrlPBuffer<CR>
 " search from buffer. a little different from CtrlPBuffer
-nnoremap <leader>tb :CommandTBuffer<CR>
 
 " Q: Closes the window
 nnoremap Q :q<cr>
@@ -120,9 +118,6 @@ vnoremap <leader>s :sort<cr>
 " easy move code blocks
 vnoremap < <gv 
 vnoremap > >gv 
-
-" command-T
-let g:CommandTCancelMap='<c-c>'
 
 nnoremap <c-e> 3<c-e>
 nnoremap <c-y> 3<c-y>
