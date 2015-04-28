@@ -31,6 +31,8 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-repeat'
 Bundle 'yegappan/mru'                                  
+" for markdown preview
+Bundle 'shime/vim-livedown'
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 set encoding=utf-8
@@ -53,7 +55,7 @@ set pastetoggle=<F6>
 set grepprg=ag
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme desert
 
 let g:solarized_termcolors=256
 nnoremap <silent> <leader>2 :TagbarToggle<CR>
@@ -157,3 +159,12 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 set laststatus=2
+" vim-livedown start
+" should markdown preview get shown automatically upon opening markdown buffer
+let g:livedown_autorun = 0
+" should the browser window pop-up upon previewing
+let g:livedown_open = 1
+" the port on which Livedown server will run
+let g:livedown_port = 1337
+nmap <leader>md :LivedownPreview<CR>
+" vim-livedown end
