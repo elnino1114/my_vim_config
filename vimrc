@@ -159,6 +159,14 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 set laststatus=2
+" vim-airline
+set t_Co=256
+set laststatus=2 " show statusline all time
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#fnamemod = ':t' " only show buffer name
+let g:airline_theme = "dark"
 " vim-livedown start
 " should markdown preview get shown automatically upon opening markdown buffer
 let g:livedown_autorun = 0
